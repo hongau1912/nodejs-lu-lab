@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="nametitle">Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/product-detail.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div class="container-fluid">
+                <div class="detail-info">
+                    <form method="POST" action="/cart">
+                        <div>
+                            <div>
+                                <h5 class="nameProduct" id="nameProduct">name</h5>
+                            </div>
+                            <div id="dropdownChooseSize" class="dropdownChooseSize">
+                                <div>
+                                    <p>Choose Your Size</p>
+                                </div>
+                            </div>
+                            <div id="show-size-detail" class="mt2-sm css-1j3x2vp">
+
+                            </div>
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="hidden" id="custId" name="custId" value="">
+                            <div>
+                                <button class="add-card">
+                                    Add To Card
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="detail__desc--intro" class="detail__desc--intro">
+
+                    </div>
+                </div>
+
+                <div id="show-image-full" class="detail-img">
+                    <div>
+                        <img class="detail-img-in" src="/images/product/6227429ae92ca.jpg" alt="">
+                    </div>
+                    <div>
+                        <img class="detail-img-in" src="/images/product/6227429aea20c.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const itemDetail = '/users/products/<%=slug%>';
+    const image = '/users/image';
+    const size = '/users/size';
+</script>
+<script src="/javascripts/product-detail.js"></script>

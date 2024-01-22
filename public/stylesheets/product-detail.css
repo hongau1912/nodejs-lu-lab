@@ -1,0 +1,153 @@
+.dropdownChooseSize {
+    display: flex;
+    justify-content: space-between;
+    /* border-top: solid 2px #E4E4E4; */
+    /* border-bottom: solid 2px #E4E4E4; */
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.dropdownChooseSize:hover {
+    cursor: pointer;
+}
+
+.dropdownChooseSize>div>p {
+    margin: auto 0px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.dropdownChooseSize>div>i {
+    margin: auto 0px;
+}
+
+.nameProduct {
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding: 15px 0px;
+}
+
+.container-detail {
+    display: flex;
+}
+
+.container-fluid {
+    width: 1570px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    display: flex;
+}
+
+.detail-info {
+    width: 23%;
+}
+
+.detail-img {
+    width: 77%;
+}
+
+.detail-img-in {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.detail-size {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-bottom: solid 2px #E4E4E4;
+}
+
+.detail-size-price {
+    border-left: solid 2px #E4E4E4;
+    border-right: solid 2px #E4E4E4;
+}
+
+.detail-size-price div {
+    font-size: 13px;
+}
+
+.detail-size-price a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+.detail-size-price a:hover {
+    color: #337ab7;
+}
+
+.hide {
+    display: none;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.add-card {
+    text-align: center;
+    background-color: #d8d8d8;
+    padding: 10px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #262626;
+    font-weight: bold;
+    /* border-radius: 5px; */
+    width: 100%;
+    border: none;
+}
+
+.add-card:hover {
+    opacity: 75%;
+}
+
+.title__detailproduct {
+    font-size: 18px;
+    font-weight: bold;
+    color: #7c7c7c;
+    margin-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.title__detailproduct-sku p {
+    font-size: 12px;
+    color: #7c7c7c;
+    margin-bottom: 5px;
+}
+
+.title__detailproduct-sku span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.css-1j3x2vp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+}
+
+.css-boder {
+    border: solid 1px #E4E4E4;
+    padding: 7px 0px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.css-boder:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+.css-boder>label:hover {
+    cursor: pointer;
+}
+
+.add-choose {
+    border: 1px solid black;
+}
+.add-choose-hide {
+    border: none;
+}

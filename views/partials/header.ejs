@@ -1,0 +1,152 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/header.css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-first">
+            <div class="header-first-fix">
+
+            </div>
+            <div class="logo-center header-first-fix">
+                <a href="/"><img src="/images/logo-lulab.png" alt=""></a>
+            </div>
+            <div class="heard-search1 header-first-fix">
+                <div class="header-search">
+                    <!-- <a class="header-search-a" style="margin-right: -30px; position: absolute;" href=""><i style="color: black;"
+                            class="bi bi-search"></i></a>
+                    <input type="text" placeholder="Search"> -->
+                    <%if(checkLocalUser) {%>
+                            <a class="header-search-b" id="myLink" class="add__inner" href="/login"><%=userName%></a>
+                            <div id="dropdown__inner" class="dropdown__inner active-login">
+                                <ul>
+                                    <li><a href="">Your Profile</a></li>
+                                    <li><a href="">Your Order</a></li>
+                                    <li><a href="">Find Contracts</a></li>
+                                    <li><a href="/logout">Log Out</a></li>
+                                </ul>
+                            </div>
+                            <% } else {%>
+                                <a class="header-search-a" id="myLink" class="add__inner" href="/login"><i
+                                        class="bi bi-person-circle"></i></i></a>
+                                <div id="dropdown__inner" class="dropdown__inner active-login">
+                                    <ul>
+                                        <li><a href="/login">Log In</a></li>
+                                        <li><a href="/register">Create Account</a></li>
+                                        <li><a href="">Look Up The Consignment Contract</a></li>
+                                    </ul>
+                                </div>
+                                <% }%>
+                                    <a id="my-search" class="header-search-a add-search" href=""><i
+                                            class="bi bi-search"></i></a>
+                                    <form method="get" action="/search">
+                                        <div id="check-none-search" class="input-search none-search">
+                                            <div class="search-left">
+                                                <div>
+                                                    <i id="myCloseSearch" class="bi bi-x"></i>
+                                                </div>
+                                            </div>
+                                            <div class="frm-icon">
+                                                <input name="word" class="frm-icon-input" type="text" placeholder="Search">
+                                                <button class="frm-icon-button">
+                                                    <i class="bi bi-arrow-return-left"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a class="header-search-a" href="/cart"><i class="bi bi-cart3"></i></a>
+                </div>
+            </div>
+        </div>
+        <div id="header-js" class="header-second">
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="/product/features">FEATURED</a>
+                    </li>
+                    <li><a href="/product/footwear">FOOTWEAR</a>
+                        <div class="dvsub-menu">
+                            <div class="dsub-menu">
+                                <ul class="sub-menu">
+                                    <li><a href="/product/newest-sneakers">Newest Sneakers</a></li>
+                                    <li><a href="/product/basketball">Basketball</a></li>
+                                    <li><a href="/product/soccer">Soccer</a></li>
+                                </ul>
+                                <ul class="sub-menu">
+                                    <li><a href="/product/lifestyle">Lifestyle</a></li>
+                                    <li><a href="/product/gym-training">Gym & Training</a></li>
+                                </ul>
+                                <div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/product/running">Running</a></li>
+                                        <li><a href="/product/sandal">Sandal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </li>
+                    <li><a href="/product/apparel">APPAREL</a>
+                        <div class="dvsub-menu">
+                            <div class="dsub-menu">
+                                <ul class="sub-menu">
+                                    <li><a href="/product/shorts">Shorts</a></li>
+                                    <li><a href="/product/pants">Paints</a></li>
+                                    <li><a href="/product/sweaters">Sweaters</a></li>
+                                </ul>
+                                <ul class="sub-menu">
+                                    <li><a href="/product/outerwears">Outerwears</a></li>
+                                    <li><a href="/product/shirts">Shirts</a></li>
+                                    <li><a href="/product/long-sleeves">Long Sleeves</a></li>
+                                </ul>
+                                <div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/product/hoodies">Hoodies</a></li>
+                                        <li><a href="/product/tees">Tees</a></li>
+                                        <li><a href="/product/jackets">Jackets</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </li>
+                    <li><a href="/product/accessories">ACCESSORIES</a>
+                        <div class="dvsub-menu">
+                            <div class="dsub-menu">
+                                <div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/product/watch">Watch</a></li>
+                                        <li><a href="/product/backpack-and-bag">Backpack An Bag</a></li>
+                                        <li><a href="/product/glasses">Glasses</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/product/socks">Socks</a></li>
+                                        <li><a href="/product/shoe-care">Shoe Care</a></li>
+                                        <li><a href="/product/bearbrick">Bearbrick</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/product/cap">Cap</a></li>
+                                        <li><a href="/product/face-mask">Face Mask</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                    </li>
+                    <li><a href="/product/type/used">USED</a>
+                    </li>
+                    <li><a href="/product/type/sale">SALE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+<script src="/javascripts/header.js"></script>

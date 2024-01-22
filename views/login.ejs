@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LU-LAB</title>
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="userauth">
+            <div class="userauth__inner">
+                <h3>
+                    Login
+                </h3>
+                <form method="POST" action="/login">
+                    <div class="frm-item">
+                        <input id="email" type="email" name="email" value="<%=valueEmail%>" placeholder="Email" required=""
+                            autofocus="">
+                    </div>
+                    <span class="help-block">
+                        <strong><%=errEmail%></strong>
+                    </span>
+                    <div class="frm-item">
+                        <input id="password" type="password" placeholder="Password" name="password" required="">
+                    </div>
+                    <div class="frm-item">
+                        <button type="submit" class="userauth__btn">Login</button>
+                    </div>
+                </form>
+                <div class="userauth__bot">
+                    <p>
+                        <a href="/register">create account</a>
+                    </p>
+                    <p>
+                        <a href="">forgot password?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

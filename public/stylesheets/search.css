@@ -1,0 +1,136 @@
+/* a {
+  color: #00B7FF;
+} */
+.title__type {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #262626;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+
+@media (min-width: 1600px) and (max-width: 2560px) {
+  .container-fluid {
+    width: 1570px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+.product__item {
+  margin-bottom: 15px;
+}
+
+.product__item--pic a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.product__item--infor {
+  display: block;
+  position: relative;
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.text-uper {
+  text-transform: uppercase;
+}
+
+.product__item--infor div.clearfix p {
+  text-align: center;
+  padding: 0;
+}
+
+.product__item--infor div.clearfix .product-price {
+  text-align: center;
+  color: #7c7c7c;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.product__item--infor div.clearfix .product-price .price-decoration {
+  text-decoration: line-through;
+  color: #7c7c7c85;
+}
+
+.product__item--infor .product-name {
+  max-width: inherit;
+  margin-bottom: 5px;
+}
+
+
+.btn-see-more {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 30px 10px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  background: #000;
+  color: #fff;
+}
+
+.head-filler {
+  display: flex;
+  /* padding-top: 15px; */
+  justify-content: space-between;
+}
+
+.head-filler p {
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.css-filter:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.menuFilter {
+  display: flex;
+  justify-content: right;
+}
+
+.menuFilter-first {
+  display: flex;
+}
+
+.filterClose {
+  font-size: 20px;
+  font-weight: bold;
+  /* border-style: dashed; */
+}
+
+.filterClose:hover {
+  color: red;
+  border-style: dashed;
+  border-radius: 20%;
+}
+
+.product__img {
+  width: 480px;
+  height: 320px;
+}
+
+.no-product {
+  display: flex;
+  justify-content: center;
+  border: 1px dashed #dcd2d2;
+  margin: 30px 50px;
+  text-align: center;
+  padding: 10px 0px;
+  width: 50%;
+  font-weight: 500;
+}

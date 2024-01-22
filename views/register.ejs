@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LU-LAB</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="userauth">
+            <div class="userauth__inner">
+                <h3>
+                    CREATE ACCOUNT
+                </h3>
+                <form method="POST" action="/register">
+                    <div class="frm-item">
+                        <input id="name" type="text" name="name" value="<%=valueRe.name%>" placeholder="Name" required=""
+                            autofocus="">
+                    </div>
+                    <div class="frm-item">
+                        <input id="email" type="email" name="email" value="<%=valueRe.email%>" placeholder="Email" required=""
+                            autofocus="">
+                    </div>
+                    <span class="help-block">
+                        <strong><%=messageEmail%></strong>
+                    </span>
+                    <div class="frm-item">
+                        <input id="password" type="password" value="" placeholder="Password" name="password" required="">
+                    </div>
+                    <span class="help-block">
+                        <strong><%=errPass%></strong>
+                    </span>
+                    <div class="frm-item">
+                        <input id="confirmPassword" type="password" value="" placeholder="Confirm password" name="confirmPassword" required="">
+                    </div>
+                    <div class="frm-item">
+                        <button type="submit" class="userauth__btn">create</button>
+                    </div>
+                </form>
+                <div class="userauth__bot">
+                    <p>
+                        <a href="/login">do you already have an account?</a>
+                    </p>
+                    <p>
+                        <a href="">forgot password?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
